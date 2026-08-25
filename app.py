@@ -3,7 +3,7 @@ from datetime import timedelta
 from functools import wraps
 from flask import Flask, jsonify, render_template, request, session
 
-app = Flask(__name__)
+app = Flask(__name__) 
 app.config.update(SECRET_KEY=os.getenv("SECRET_KEY", "local-dev-key-change-before-deploy"), PERMANENT_SESSION_LIFETIME=timedelta(hours=4))
 
 COLORS = ("#f7a8b8", "#a9d6ca", "#b9b7ef", "#f5c889", "#a9c6ea", "#e6b6d4")

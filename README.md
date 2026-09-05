@@ -16,7 +16,7 @@ Replace these names and PINs in `app.py` before sharing the site. The PINs below
 
 | Teacher | PIN |
 |---|---:|
-| Teacher 1 | 1001 |
+| Mudita Ma'am | 1001 |
 | Teacher 2 | 1002 |
 | Teacher 3 | 1003 |
 | Teacher 4 | 1004 |

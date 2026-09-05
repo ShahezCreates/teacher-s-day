@@ -12,6 +12,17 @@ GIFTS = ("The Golden Quill", "The Curiosity Jar", "The Puzzle Compass", "The Tim
 TEACHERS = {f"Teacher {number}": {"pin": str(1000 + number), "subject": "Teacher's Day", "emoji": EMOJIS[(number - 1) % 6], "color": COLORS[(number - 1) % 6], "gift": GIFTS[(number - 1) % 6], "line": "For making every school day brighter."} for number in range(1, 35)}
 NOTES = {teacher: [("Student 1", "Thank you for believing in us every day."), ("Student 2", "Your patience makes learning feel possible."), ("Student 3", "Thank you for turning lessons into lovely memories."), ("Student 4", "We are grateful for every little encouragement.")] for teacher in TEACHERS}
 
+# Personalised Teacher's Day space — edit this section whenever you add another individual gift.
+TEACHERS["Mudita Ma'am"] = TEACHERS.pop("Teacher 1") | {
+    "gift": "A Little Book of Gratitude",
+    "line": "With warmth and appreciation, from Anas.",
+}
+NOTES["Mudita Ma'am"] = [(
+    "Anas",
+    "Dear Mudita Ma'am, thank you for being far more than a teacher — for bringing patience to every question, kindness to every ordinary day, and confidence to moments when I needed it most. The lessons you give do not end with a bell; they stay with me as courage, curiosity, and the wish to do better. I hope this small gift reminds you of the enormous difference your warmth and guidance make. Happy Teacher's Day, Ma'am — with heartfelt gratitude, Anas.",
+)]
+NOTES.pop("Teacher 1", None)
+
 def current_teacher(): return session.get("teacher")
 def protected(fn):
     @wraps(fn)

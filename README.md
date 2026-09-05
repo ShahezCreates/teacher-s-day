@@ -16,7 +16,7 @@ Replace these names and PINs in `app.py` before sharing the site. The PINs below
 
 | Teacher | PIN |
 |---|---:|
-| Mudita Ma'am | 1001 |
+| Mudita Ma'am | 1001 | 
 | Hari Krishnan Sir | 1002 |
 | Shilpa Srivastava Ma'am | 0101 |
 | Vandna Kansal Ma'am | 1004 |
@@ -47,7 +47,7 @@ Replace these names and PINs in `app.py` before sharing the site. The PINs below
 | Jayalakshmi Ma'am | 1029 |
 | Ashish Sir | 1030 |
 | Sanjeev Sir | 1031 |
-| Vandana Ma'am | 1032 |
+| Vandana mehndiratta Ma'am | 1032 |
 | Varuna Ma'am | 1033 |
 | Kamal Sir | 1034 |
 | Amrit Ma'am | 1035 |

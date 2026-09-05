@@ -20,6 +20,11 @@ Replace these names and PINs in `app.py` before sharing the site. The PINs below
 | Hari Krishnan Sir | 1002 |
 | Shilpa Srivastava Ma'am | 0101 |
 | Vandna Kansal Ma'am | 1004 |
+| Bosco Paul Alapatt Sir | 1005 |
+| Ranjeeta Ma'am | 1006 |
+| Dr Glory Ma'am | 1007 |
+| Lawrence Kujur Sir | 1008 |
+| Yash Thakur Sir | 1009 |
 | Teacher 5 | 1005 |
 | Teacher 6 | 1006 |
 | Teacher 7 | 1007 |

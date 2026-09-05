@@ -53,6 +53,22 @@ NOTES["Vandna Kansal Ma'am"] = [(
 )]
 NOTES.pop("Teacher 4", None)
 
+TEACHERS["Bosco Paul Alapatt Sir"] = TEACHERS.pop("Teacher 5") | {"pin": "1005", "subject": "School of Sciences · Associate Dean", "emoji": "★", "gift": "The Steady Compass", "line": "For leading with understanding and unwavering support."}
+NOTES["Bosco Paul Alapatt Sir"] = [("Anas", "Dear Bosco Paul Alapatt Sir, thank you for being one of the most supportive and understanding people I have met in college. As the HOD of the School of Sciences and Associate Dean, you carry many responsibilities, yet you still make people feel heard, encouraged, and capable. Your guidance gives students the confidence to move forward even when things feel uncertain. Thank you for leading with both wisdom and kindness. Happy Teacher's Day, Sir — with deep respect and gratitude from Anas.")]
+NOTES.pop("Teacher 5", None)
+TEACHERS["Ranjeeta Ma'am"] = TEACHERS.pop("Teacher 6") | {"pin": "1006", "subject": "TCLS", "emoji": "✿", "gift": "The Future-Ready Notebook", "line": "For teaching lessons that reach far beyond the classroom."}
+NOTES["Ranjeeta Ma'am"] = [("Anas", "Dear Ranjeeta Ma'am, thank you for making TCLS feel like a guide for real life rather than just another subject to complete. You teach us the things we genuinely need for a better future — how to think clearly, grow responsibly, and face every field of life with confidence. Your lessons have a way of staying useful long after the class is over, which is probably the best kind of teaching. Happy Teacher's Day, Ma'am — with sincere appreciation from Anas.")]
+NOTES.pop("Teacher 6", None)
+TEACHERS["Dr Glory Ma'am"] = TEACHERS.pop("Teacher 7") | {"pin": "1007", "subject": "Mentorship", "emoji": "♥", "gift": "The Mentor's Lantern", "line": "For being a steady light whenever students need direction."}
+NOTES["Dr Glory Ma'am"] = [("Anas", "Dear Dr Glory Ma'am, thank you for being such a supportive mentor and one of the kindest people in our college journey. Your encouragement makes difficult moments feel manageable, and your guidance helps students see possibilities in themselves that they may not have noticed yet. You support us not only in our work, but also in becoming more confident people. Happy Teacher's Day, Ma'am — with heartfelt gratitude from Anas.")]
+NOTES.pop("Teacher 7", None)
+TEACHERS["Lawrence Kujur Sir"] = TEACHERS.pop("Teacher 8") | {"pin": "1008", "subject": "HED", "emoji": "☀", "gift": "The Alumni Inspiration Badge", "line": "For showing us that a Christ journey can come full circle."}
+NOTES["Lawrence Kujur Sir"] = [("Anas", "Dear Lawrence Kujur Sir, thank you for making HED engaging, thoughtful, and connected to the values that matter outside a classroom too. It is inspiring to learn from a Christ alumnus who has returned to guide the next generation. Your journey reminds us that our time here can become the beginning of something meaningful, not just a collection of attendance marks and deadlines. Happy Teacher's Day, Sir — with respect and gratitude from Anas.")]
+NOTES.pop("Teacher 8", None)
+TEACHERS["Yash Thakur Sir"] = TEACHERS.pop("Teacher 9") | {"pin": "1009", "subject": "AI · Python · Eulim Science Club", "emoji": "⚙", "gift": "The Code Explorer Medal", "line": "For making technology, curiosity, and community go together."}
+NOTES["Yash Thakur Sir"] = [("Anas", "Dear Yash Thakur Sir, thank you for making AI and Python feel exciting instead of intimidating — even when the code has other plans and produces errors with great confidence. As our teacher, Eulim Science Club mentor, and a Christ alumnus, you show us how curiosity can grow into real skill and community. Your support encourages us to explore, build, and keep trying until the program finally runs. Happy Teacher's Day, Sir — with gratitude, curiosity, and hopefully fewer bugs from Anas.")]
+NOTES.pop("Teacher 9", None)
+
 def current_teacher(): return session.get("teacher")
 def protected(fn):
     @wraps(fn)

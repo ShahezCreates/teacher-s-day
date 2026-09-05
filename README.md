@@ -52,6 +52,14 @@ Replace these names and PINs in `app.py` before sharing the site. The PINs below
 | Kamal Sir | 1034 |
 | Amrit Ma'am | 1035 |
 | Preety Ma'am | 1036 |
+| Gautam Sir | 1037 |
+| Neetu Ma'am | 1038 |
+| Bholey Singh Sir | 1039 |
+| Tanushree Ma'am | 1040 |
+| Sweta Ma'am | 1041 |
+| Manisha Ma'am | 1042 |
+| Sunil Sir | 1043 |
+| Mukesh Sir | 1044 |
 | Teacher 5 | 1005 |
 | Teacher 6 | 1006 |
 | Teacher 7 | 1007 |

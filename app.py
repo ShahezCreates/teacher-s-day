@@ -101,6 +101,26 @@ for position, (name, (pin, subject, gift, line, note)) in enumerate(ADDITIONAL_T
     TEACHERS[name] = {"pin": pin, "subject": subject, "emoji": EMOJIS[position % 6], "color": COLORS[position % 6], "gift": gift, "line": line}
     NOTES[name] = [("Anas", note)]
 
+# Honorific corrections for existing faculty records; PINs and messages remain unchanged.
+for old_name, new_name in {
+    "Neetu Ma'am": "Dr. Neetu Ma'am", "Bholey Singh Sir": "Dr. Bholey Singh Sir", "Tanushree Ma'am": "Dr. Tanushree Ma'am",
+    "Sweta Ma'am": "Dr. Sweta Ma'am", "Manisha Ma'am": "Dr. Himani Ma'am", "Sunil Sir": "Dr. Sunil Sir", "Mukesh Sir": "Dr. Mukesh Sir",
+}.items():
+    TEACHERS[new_name] = TEACHERS.pop(old_name)
+    NOTES[new_name] = NOTES.pop(old_name)
+
+MORE_FACULTY = {
+    "Dr. Chandra Shekhar Sir": ("1045", "Organic Chemistry", "The Chemistry Clarity Medal", "For making Chemistry feel clear, calm, and approachable.", "Dear Dr. Chandra Shekhar Sir, thank you for being such a kind, understanding, and supportive teacher. Your clear and effective teaching creates a comfortable environment where students can learn with confidence. You are truly one of my favourite teachers and one of the best Chemistry faculty members in the college. Happy Teacher's Day, Sir — with sincere admiration and gratitude from Anas."),
+    "Dr. Amit Vashistha Sir": ("1046", "Genetics and Molecular Biology", "The Encouragement Catalyst Award", "For helping every student grow with confidence.", "Dear Dr. Amit Vashistha Sir, thank you for being an excellent and supportive teacher who always guides and encourages students. Your effective explanations and approachable nature make it easy to seek help whenever it is needed. Your continuous support gives students confidence to keep learning and growing. Happy Teacher's Day, Sir — with warm appreciation from Anas."),
+    "Dr. Aanchal Sethi Ma'am": ("1047", "Chemistry", "The Discipline & Dedication Badge", "For teaching that responsibility makes every goal stronger.", "Dear Dr. Aanchal Sethi Ma'am, thank you for your discipline, dedication, and strong sense of responsibility. Your punctuality and clear expectations create a positive learning environment and encourage students to develop the same valuable qualities in their own lives. Your structured approach makes every class meaningful. Happy Teacher's Day, Ma'am — with respect and gratitude from Anas."),
+    "Dr. Narbeer Singh Sir": ("1048", "Inorganic Chemistry", "The Calm Chemistry Compass", "For making difficult concepts feel relaxed and approachable.", "Dear Dr. Narbeer Singh Sir, thank you for being such a knowledgeable and approachable teacher. Your pleasant, calm, and friendly nature makes students comfortable interacting with you and asking questions freely. Your teaching helps make Inorganic Chemistry easier to understand and far more approachable. Happy Teacher's Day, Sir — with sincere gratitude from Anas."),
+    "Dr. Madhulika Singh Ma'am": ("1049", "Botany", "The Structured Learning Leaf", "For helping every concept grow with clarity.", "Dear Dr. Madhulika Singh Ma'am, thank you for being such a dedicated teacher and for explaining Botany in a clear, structured manner. The way you conduct your classes helps students understand concepts effectively and build a strong foundation in the subject. Happy Teacher's Day, Ma'am — with warm appreciation from Anas."),
+    "Dr. Shikha Malik Ma'am": ("1050", "Zoology", "The Friendly Guide Award", "For making every question feel welcome.", "Dear Dr. Shikha Malik Ma'am, thank you for being such an excellent and friendly teacher. Your approachable nature makes students feel comfortable asking questions and discussing academic difficulties without hesitation. Your effective teaching and positive relationship with students make a real difference. Happy Teacher's Day, Ma'am — with heartfelt gratitude from Anas."),
+}
+for position, (name, (pin, subject, gift, line, note)) in enumerate(MORE_FACULTY.items(), start=2):
+    TEACHERS[name] = {"pin": pin, "subject": subject, "emoji": EMOJIS[position % 6], "color": COLORS[position % 6], "gift": gift, "line": line}
+    NOTES[name] = [("Anas", note)]
+
 def current_teacher(): return session.get("teacher")
 def protected(fn):
     @wraps(fn)

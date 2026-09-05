@@ -53,13 +53,19 @@ Replace these names and PINs in `app.py` before sharing the site. The PINs below
 | Amrit Ma'am | 1035 |
 | Preety Ma'am | 1036 |
 | Gautam Sir | 1037 |
-| Neetu Ma'am | 1038 |
-| Bholey Singh Sir | 1039 |
-| Tanushree Ma'am | 1040 |
-| Sweta Ma'am | 1041 |
-| Manisha Ma'am | 1042 |
-| Sunil Sir | 1043 |
-| Mukesh Sir | 1044 |
+| Dr. Neetu Ma'am | 1038 |
+| Dr. Bholey Singh Sir | 1039 |
+| Dr. Tanushree Ma'am | 1040 |
+| Dr. Sweta Ma'am | 1041 |
+| Dr. Himani Ma'am | 1042 |
+| Dr. Sunil Sir | 1043 |
+| Dr. Mukesh Sir | 1044 |
+| Dr. Chandra Shekhar Sir | 1045 |
+| Dr. Amit Vashistha Sir | 1046 |
+| Dr. Aanchal Sethi Ma'am | 1047 |
+| Dr. Narbeer Singh Sir | 1048 |
+| Dr. Madhulika Singh Ma'am | 1049 |
+| Dr. Shikha Malik Ma'am | 1050 |
 | Teacher 5 | 1005 |
 | Teacher 6 | 1006 |
 | Teacher 7 | 1007 |

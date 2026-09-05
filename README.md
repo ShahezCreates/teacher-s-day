@@ -17,9 +17,9 @@ Replace these names and PINs in `app.py` before sharing the site. The PINs below
 | Teacher | PIN |
 |---|---:|
 | Mudita Ma'am | 1001 |
-| Teacher 2 | 1002 |
-| Teacher 3 | 1003 |
-| Teacher 4 | 1004 |
+| Hari Krishnan Sir | 1002 |
+| Shilpa Srivastava Ma'am | 0101 |
+| Vandna Kansal Ma'am | 1004 |
 | Teacher 5 | 1005 |
 | Teacher 6 | 1006 |
 | Teacher 7 | 1007 |

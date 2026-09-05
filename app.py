@@ -23,6 +23,36 @@ NOTES["Mudita Ma'am"] = [(
 )]
 NOTES.pop("Teacher 1", None)
 
+TEACHERS["Hari Krishnan Sir"] = TEACHERS.pop("Teacher 2") | {
+    "pin": "1002", "subject": "Academic Writing", "emoji": "✒", "gift": "The Red-Pen Survival Kit",
+    "line": "For teaching us that a comma can be a matter of academic survival.",
+}
+NOTES["Hari Krishnan Sir"] = [(
+    "Anas",
+    "Dear Hari Krishnan Sir, thank you for teaching us that academic writing is not simply putting big words into a paragraph and hoping they sound intelligent — although we have all bravely attempted that strategy. You showed us how to turn scattered thoughts into clear arguments, how to respect a citation, and how one carefully placed comma can save an entire sentence from disaster. Thank you for making us better writers, sharper thinkers, and slightly more suspicious of the word 'very'. Happy Teacher's Day, Sir — with sincere gratitude and a carefully proofread thank-you from Anas.",
+)]
+NOTES.pop("Teacher 2", None)
+
+TEACHERS["Shilpa Srivastava Ma'am"] = TEACHERS.pop("Teacher 3") | {
+    "pin": "0101", "subject": "DCF", "emoji": "✦", "gift": "The Creative Spark Trophy",
+    "line": "For turning every brief into a bright new possibility.",
+}
+NOTES["Shilpa Srivastava Ma'am"] = [(
+    "Anas",
+    "Dear Shilpa Srivastava Ma'am, thank you for making DCF feel like a place where ideas are allowed to be bold, colourful, and occasionally created five minutes before the deadline. You taught us to look beyond the obvious, trust the process, and remember that the first draft is not a final verdict — it is simply the brave beginning of something better. Thank you for bringing creativity, energy, and just the right amount of productive chaos into every class. Happy Teacher's Day, Ma'am — with lots of gratitude and imagination from Anas.",
+)]
+NOTES.pop("Teacher 3", None)
+
+TEACHERS["Vandna Kansal Ma'am"] = TEACHERS.pop("Teacher 4") | {
+    "pin": "1004", "subject": "Webstack", "emoji": "</>", "gift": "The Debugging Hero Badge",
+    "line": "For proving that every bug has a solution — eventually.",
+}
+NOTES["Vandna Kansal Ma'am"] = [(
+    "Anas",
+    "Dear Vandna Kansal Ma'am, thank you for guiding us through Webstack, where one missing semicolon can somehow become a full-time emotional experience. You made HTML, CSS, JavaScript, and the mysterious world behind a working website feel less like magic and more like a challenge we could actually solve. Thank you for your patience when our layouts moved unexpectedly, our code refused to cooperate, and we insisted that it worked perfectly on our screen. Happy Teacher's Day, Ma'am — with appreciation, fewer console errors, and a grateful thank-you from Anas.",
+)]
+NOTES.pop("Teacher 4", None)
+
 def current_teacher(): return session.get("teacher")
 def protected(fn):
     @wraps(fn)

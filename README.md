@@ -25,6 +25,7 @@ Replace these names and PINs in `app.py` before sharing the site. The PINs below
 | Dr Glory Ma'am | 1007 |
 | Lawrence Kujur Sir | 1008 |
 | Yash Thakur Sir | 1009 |
+| Abhinav Sir | 1010 |
 | Teacher 5 | 1005 |
 | Teacher 6 | 1006 |
 | Teacher 7 | 1007 |

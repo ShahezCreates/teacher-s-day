@@ -69,6 +69,10 @@ TEACHERS["Yash Thakur Sir"] = TEACHERS.pop("Teacher 9") | {"pin": "1009", "subje
 NOTES["Yash Thakur Sir"] = [("Anas", "Dear Yash Thakur Sir, thank you for making AI and Python feel exciting instead of intimidating — even when the code has other plans and produces errors with great confidence. As our teacher, Eulim Science Club mentor, and a Christ alumnus, you show us how curiosity can grow into real skill and community. Your support encourages us to explore, build, and keep trying until the program finally runs. Happy Teacher's Day, Sir — with gratitude, curiosity, and hopefully fewer bugs from Anas.")]
 NOTES.pop("Teacher 9", None)
 
+TEACHERS["Abhinav Sir"] = TEACHERS.pop("Teacher 10") | {"pin": "1010", "subject": "Mathematics", "emoji": "π", "gift": "The Calm Problem-Solver Award", "line": "For making every difficult problem feel possible."}
+NOTES["Abhinav Sir"] = [("Anas", "Dear Abhinav Sir, thank you for being such a talented, understanding, and calm teacher. You have a wonderful way of making mathematics feel less like a maze of numbers and more like a puzzle that can be solved one patient step at a time. Your calm guidance makes even the toughest questions feel manageable, and your encouragement gives students the confidence to keep trying. Happy Teacher's Day, Sir — with sincere gratitude from Anas.")]
+NOTES.pop("Teacher 10", None)
+
 def current_teacher(): return session.get("teacher")
 def protected(fn):
     @wraps(fn)

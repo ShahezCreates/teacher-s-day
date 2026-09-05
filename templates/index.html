@@ -24,21 +24,27 @@
             <p class="subtitle">A little scrapbook made with a lot of gratitude — just for you.</p>
             <div class="memory-stamp" id="stamp">✦ 0 memories opened</div>
         </header>
-        <section class="gift-grid">
+        <section class="gift-grid gift-only">
             <article class="gift-card hero-card">
                 <div class="sticker">{{ data.emoji }}</div>
                 <p class="card-kicker">YOUR SPECIAL GIFT</p>
                 <h2>{{ data.gift }}</h2>
                 <p>{{ data.line }}</p><span class="ribbon">made for {{ data.subject }}</span>
             </article>
-            <article class="gift-card game-card">
+        </section>
+        <section class="activities" aria-labelledby="activityTitle">
+            <div class="activity-heading"><p class="eyebrow">PLAYFUL PAUSE</p><h2 id="activityTitle">Your mini joy corner</h2><p>Pick a little activity, take a breath, and enjoy your day.</p></div>
+            <div class="activity-grid">
+            <article class="activity-card star-game">
                 <p class="card-kicker">TINY BRAIN BREAK</p>
                 <h2>Catch the stars!</h2>
                 <p>Tap as many sparkles as you can in 12 seconds.</p>
                 <div class="game-line"><strong id="score">0</strong><span id="timer">12s</span><button id="play">play
                         ✦</button></div><button id="star" aria-label="Catch a star" hidden>✦</button>
             </article>
-            <article class="gift-card fortune-card"><p class="card-kicker">A TINY PICK-ME-UP</p><h2>Open a kindness fortune</h2><p id="fortuneText">A cheerful thought is tucked inside.</p><button id="fortune">open my fortune ✦</button></article>
+            <article class="activity-card fortune-card"><p class="card-kicker">A TINY PICK-ME-UP</p><h3>Kindness fortune</h3><p id="fortuneText">A cheerful thought is tucked inside.</p><button id="fortune">open my fortune ✦</button></article>
+            <article class="activity-card compliment-card"><p class="card-kicker">MYSTERY ENVELOPE</p><h3>Tap for a compliment</h3><button id="compliment" class="envelope" aria-label="Reveal a compliment"><span>✉</span><b>tap to open</b></button><p id="complimentText" aria-live="polite">Your surprise is sealed inside.</p></article>
+            </div>
         </section>
         <section class="reveal" id="reveal" aria-live="polite">
             <div class="pin">♥</div>

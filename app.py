@@ -121,6 +121,15 @@ for position, (name, (pin, subject, gift, line, note)) in enumerate(MORE_FACULTY
     TEACHERS[name] = {"pin": pin, "subject": subject, "emoji": EMOJIS[position % 6], "color": COLORS[position % 6], "gift": gift, "line": line}
     NOTES[name] = [("Anas", note)]
 
+# These Teacher's Day gifts are from Sana, not Anas.
+SANA_GIFTS = (
+    "Dr. Neetu Ma'am", "Dr. Bholey Singh Sir", "Dr. Tanushree Ma'am", "Dr. Sweta Ma'am", "Dr. Himani Ma'am", "Dr. Sunil Sir", "Dr. Mukesh Sir",
+    "Dr. Chandra Shekhar Sir", "Dr. Amit Vashistha Sir", "Dr. Aanchal Sethi Ma'am", "Dr. Narbeer Singh Sir", "Dr. Madhulika Singh Ma'am", "Dr. Shikha Malik Ma'am",
+)
+for teacher in SANA_GIFTS:
+    _, note = NOTES[teacher][0]
+    NOTES[teacher] = [("Sana", note.replace("from Anas.", "from Sana."))]
+
 def current_teacher(): return session.get("teacher")
 def protected(fn):
     @wraps(fn)

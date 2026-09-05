@@ -26,6 +26,32 @@ Replace these names and PINs in `app.py` before sharing the site. The PINs below
 | Lawrence Kujur Sir | 1008 |
 | Yash Thakur Sir | 1009 |
 | Abhinav Sir | 1010 |
+| Vaibhav Sir | 1011 |
+| Aparna Ma'am | 1012 |
+| Lata Ma'am | 1013 |
+| Swati Ma'am | 1014 |
+| Kuljeet Sir | 1015 |
+| Garima Ma'am | 1016 |
+| Rajesh Sir | 1017 |
+| Akshita Ma'am | 1018 |
+| Manjula Ma'am | 1019 |
+| Vidushi Ma'am | 1020 |
+| Jaspreet Sir | 1021 |
+| Neelam Ma'am | 1022 |
+| Meghavi Ma'am | 1023 |
+| Ramesh Sir | 1024 |
+| Madan Sir | 1025 |
+| Indu Ma'am | 1026 |
+| Purnima Ma'am | 1027 |
+| Neha Ma'am | 1028 |
+| Jayalakshmi Ma'am | 1029 |
+| Ashish Sir | 1030 |
+| Sanjeev Sir | 1031 |
+| Vandana Ma'am | 1032 |
+| Varuna Ma'am | 1033 |
+| Kamal Sir | 1034 |
+| Amrit Ma'am | 1035 |
+| Preety Ma'am | 1036 |
 | Teacher 5 | 1005 |
 | Teacher 6 | 1006 |
 | Teacher 7 | 1007 |

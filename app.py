@@ -73,6 +73,20 @@ TEACHERS["Abhinav Sir"] = TEACHERS.pop("Teacher 10") | {"pin": "1010", "subject"
 NOTES["Abhinav Sir"] = [("Anas", "Dear Abhinav Sir, thank you for being such a talented, understanding, and calm teacher. You have a wonderful way of making mathematics feel less like a maze of numbers and more like a puzzle that can be solved one patient step at a time. Your calm guidance makes even the toughest questions feel manageable, and your encouragement gives students the confidence to keep trying. Happy Teacher's Day, Sir — with sincere gratitude from Anas.")]
 NOTES.pop("Teacher 10", None)
 
+# School of Sciences faculty list. Add subject-specific notes later by replacing an entry in NOTES.
+SCHOOL_OF_SCIENCES_FACULTY = [
+    "Vaibhav Sir", "Aparna Ma'am", "Lata Ma'am", "Swati Ma'am", "Kuljeet Sir", "Garima Ma'am", "Rajesh Sir", "Akshita Ma'am",
+    "Manjula Ma'am", "Vidushi Ma'am", "Jaspreet Sir", "Neelam Ma'am", "Meghavi Ma'am", "Ramesh Sir", "Madan Sir", "Indu Ma'am",
+    "Purnima Ma'am", "Neha Ma'am", "Jayalakshmi Ma'am", "Ashish Sir", "Sanjeev Sir", "Vandana Ma'am", "Varuna Ma'am", "Kamal Sir",
+    "Amrit Ma'am", "Preety Ma'am",
+]
+for number, name in enumerate(SCHOOL_OF_SCIENCES_FACULTY, start=11):
+    source = f"Teacher {number}"
+    base = TEACHERS.pop(source, {"subject": "School of Sciences", "emoji": "✦", "color": COLORS[(number - 1) % 6], "gift": "The Gratitude Star", "line": "For making learning brighter every day."})
+    TEACHERS[name] = base | {"pin": str(1000 + number), "subject": "School of Sciences", "gift": "The Gratitude Star", "line": "For helping students learn, grow, and believe in themselves."}
+    NOTES[name] = [("Anas", f"Dear {name}, thank you for the dedication, patience, and encouragement you bring to students every day. Your guidance makes the School of Sciences a more thoughtful and inspiring place to learn, and the impact of your work reaches far beyond a single classroom. Happy Teacher's Day — with sincere gratitude and warm wishes from Anas.")]
+    NOTES.pop(source, None)
+
 def current_teacher(): return session.get("teacher")
 def protected(fn):
     @wraps(fn)
